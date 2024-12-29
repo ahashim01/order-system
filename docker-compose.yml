@@ -1,0 +1,74 @@
+version: '3.8'
+
+services:
+  # PostgreSQL Database
+  db:
+    container_name: postgres
+    image: postgres:15
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: use_case_db
+      POSTGRES_USER: use_case_user
+      POSTGRES_PASSWORD: use_case_pass
+    ports:
+      - "5432:5432"
+
+  # Redis for Celery broker and result backend
+  redis:
+    container_name: redis
+    image: redis:6.2-alpine
+    ports:
+      - "6379:6379"
+
+  # Django Web Application
+  web:
+    container_name: web
+    build: .
+    volumes:
+      - .:/app
+      - static_volume:/app/staticfiles  # Add this volume
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+      - redis
+    environment:
+      - DATABASE_URL=postgres://use_case_user:use_case_pass@db:5432/use_case_db
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/1
+    command: >
+      sh -c "python manage.py makemigrations &&
+             python manage.py migrate &&
+             python manage.py collectstatic --noinput &&
+             gunicorn --workers=3 --bind=0.0.0.0:8000 use_case_project.wsgi:application"
+
+  # Celery Worker
+  worker:
+    container_name: worker
+    build: .
+    command: celery -A use_case_project worker --loglevel=info
+    depends_on:
+      - web
+      - redis
+    environment:
+      - DATABASE_URL=postgres://use_case_user:use_case_pass@db:5432/use_case_db
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/1
+
+  # Celery Beat (Optional - For scheduled tasks)
+  beat:
+    container_name: beat
+    build: .
+    command: celery -A use_case_project beat --loglevel=info
+    depends_on:
+      - web
+      - redis
+    environment:
+      - DATABASE_URL=postgres://use_case_user:use_case_pass@db:5432/use_case_db
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/1
+
+volumes:
+  postgres_data:
+  static_volume:

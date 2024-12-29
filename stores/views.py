@@ -1,10 +1,8 @@
-from django.shortcuts import render
-from django.shortcuts import get_object_or_404
-from .models import *
-from django.http import HttpResponse
+from stores.tasks import process_order_task
+from stores.utils import parse_json_request
+from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
-import json
-from django.db import transaction
+
 
 @csrf_exempt
 def stores_webhooks(request, store_type_name):
@@ -15,8 +13,18 @@ def stores_webhooks(request, store_type_name):
     # Note that you need to respond with a 200 status code to the webhook request, the max time to respond is 5 seconds.
 
     # store_type = get_object_or_404(StoreType, name=store_type_name)
-    body = request.body.decode('utf-8')
-    json_body = json.loads(body)
-    
-    # LOGIC HERE.
-    return HttpResponse('ok')
+    try:
+        # Validate request method
+        if request.method != "POST":
+            return JsonResponse({"error": "Invalid request method."}, status=405)
+
+        # Parse and validate JSON body
+        data = parse_json_request(request.body)
+
+        # Trigger Celery task asynchronously
+        process_order_task.delay(data, store_type_name)
+
+        return JsonResponse({"status": "success"}, status=200)
+
+    except Exception as e:
+        return JsonResponse({"error": str(e)}, status=400)

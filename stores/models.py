@@ -145,4 +145,4 @@ class Customers(ModelBase):
     gender = models.CharField(choices=GENDERS, max_length=45, blank=True, null=True)
 
     class Meta:
-        unique_together = [["store_type", "store_type_id"]]  # prevent duplicate customers in the same store
+        unique_together = [["store_type", "store_type_identifier"]]  # prevent duplicate customers in the same store
