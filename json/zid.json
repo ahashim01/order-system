@@ -1,0 +1,299 @@
+{
+    "id": 35743657,
+    "code": "uCExgVrIDx",
+    "tags": [
+      {
+        "id": "5aec0967-2f34-4355-af89-3c7d453fd47d",
+        "name": "تم ترحيل الطلب altflow",
+        "orders": [],
+        "user_id": "d657b845-c02c-41b2-8e79-aad29e6eab6d",
+        "store_id": "16a6d508-7fbe-4546-ad35-14c3556f254d"
+      }
+    ],
+    "coupon": {
+      "id": 395523,
+      "code": "H99",
+      "name": "ام محمد",
+      "discount": "-21.7391",
+      "discount_string": "-21.74 SAR"
+    },
+    "source": "تطبيق المتجر",
+    "weight": 0,
+    "payment": {
+      "method": {
+        "code": "zidpay",
+        "name": "بطاقة إئتمانية",
+        "type": "cc",
+        "cart_payment_request_token": null
+      },
+      "invoice": [
+        {
+          "code": "sub_totals_before_vat",
+          "title": "المجموع غير شامل الضريبة",
+          "value": "217.39130434783000",
+          "value_string": "217.39 SAR"
+        },
+        {
+          "code": "coupon",
+          "title": "قسيمة التخفيض",
+          "value": "-21.73913043478300",
+          "value_string": "-21.74 SAR"
+        },
+        {
+          "code": "sub_totals_after_coupon_discount",
+          "title": "قيمة المنتجات بعد التخفيض",
+          "value": "195.65217391304000",
+          "value_string": "195.65 SAR"
+        },
+        {
+          "code": "taxable_amount",
+          "title": "المبلغ الخاضع للضريبة",
+          "value": "195.65217391304000",
+          "value_string": "195.65 SAR"
+        },
+        {
+          "code": "vat",
+          "title": "ضريبة القيمة المضافة (15%)",
+          "value": "29.34782608695700",
+          "value_string": "29.35 SAR"
+        },
+        {
+          "code": "sub_totals_after_vat",
+          "title": "مجموع المنتجات شامل ضريبة القيمة المضافة",
+          "value": "225.00000000000000",
+          "value_string": "225.00 SAR"
+        },
+        {
+          "code": "total",
+          "title": "المجموع الكلي",
+          "value": "225.00000000000000",
+          "value_string": "225.00 SAR"
+        }
+      ]
+    },
+    "currency": {
+      "order_currency": {
+        "id": 4,
+        "code": "SAR",
+        "exchange_rate": 1
+      },
+      "order_store_currency": {
+        "id": 4,
+        "code": "SAR",
+        "exchange_rate": null
+      }
+    },
+    "customer": {
+      "id": 8114623,
+      "name": "Alanoud aqab alashammari",
+      "note": "",
+      "type": "individual",
+      "email": "",
+      "mobile": "97455055560",
+      "verified": 1
+    },
+    "language": "ar",
+    "products": [
+      {
+        "id": "73258621-2e34-43a7-b678-187db3f4ea34",
+        "sku": "Z.211351.16587638256718338",
+        "meta": null,
+        "name": "500 علبة ماء 330 مل",
+        "price": 250,
+        "total": 250,
+        "images": [
+          {
+            "id": "df706bc2-6aa3-4dd0-811d-0c37e01bb75e",
+            "origin": "https://media.zid.store/thumbs/16a6d508-7fbe-4546-ad35-14c3556f254d/df706bc2-6aa3-4dd0-811d-0c37e01bb75e-thumbnail-500x500.png",
+            "thumbs": {
+              "large": "https://media.zid.store/thumbs/16a6d508-7fbe-4546-ad35-14c3556f254d/df706bc2-6aa3-4dd0-811d-0c37e01bb75e-thumbnail-1000x1000.png",
+              "small": "https://media.zid.store/thumbs/16a6d508-7fbe-4546-ad35-14c3556f254d/df706bc2-6aa3-4dd0-811d-0c37e01bb75e-thumbnail-500x500.png",
+              "medium": "https://media.zid.store/thumbs/16a6d508-7fbe-4546-ad35-14c3556f254d/df706bc2-6aa3-4dd0-811d-0c37e01bb75e-thumbnail-770x770.png",
+              "fullSize": "https://media.zid.store/16a6d508-7fbe-4546-ad35-14c3556f254d/df706bc2-6aa3-4dd0-811d-0c37e01bb75e.png",
+              "thumbnail": "https://media.zid.store/thumbs/16a6d508-7fbe-4546-ad35-14c3556f254d/df706bc2-6aa3-4dd0-811d-0c37e01bb75e-thumbnail-370x370.png"
+            }
+          }
+        ],
+        "weight": null,
+        "options": [],
+        "quantity": 1,
+        "vouchers": null,
+        "net_price": 217.39130434783,
+        "parent_id": null,
+        "is_taxable": true,
+        "tax_amount": "32.60869565217400",
+        "gross_price": 250,
+        "parent_name": null,
+        "price_before": null,
+        "price_string": "250.00 SAR",
+        "total_before": null,
+        "total_string": "250.00 SAR",
+        "custom_fields": [],
+        "is_discounted": false,
+        "product_class": null,
+        "net_sale_price": null,
+        "tax_percentage": 0.15,
+        "additions_price": 0,
+        "gross_sale_price": null,
+        "net_price_string": "217.39 SAR",
+        "short_description": {
+          "ar": "",
+          "en": ""
+        },
+        "tax_amount_string": "32.61 SAR",
+        "gross_price_string": "250.00 SAR",
+        "net_additions_price": 0,
+        "price_before_string": null,
+        "total_before_string": null,
+        "price_with_additions": 250,
+        "gross_additions_price": 0,
+        "net_sale_price_string": null,
+        "additions_price_string": "0.00 SAR",
+        "gross_sale_price_string": null,
+        "net_price_with_additions": 217.39130434783,
+        "net_additions_price_string": null,
+        "tax_amount_string_per_item": "32.60 SAR",
+        "price_with_additions_string": "250.00 SAR",
+        "gross_additions_price_string": null,
+        "net_price_with_additions_string": "217.39 SAR"
+      }
+    ],
+    "shipping": {
+      "method": {
+        "id": null,
+        "code": null,
+        "icon": "https://media.zid.store/static/delivery.png",
+        "name": "لا يتطلب شحن",
+        "courier": null,
+        "waybill": null,
+        "tracking": {
+          "url": null,
+          "number": null,
+          "status": null
+        },
+        "return_shipment": null,
+        "is_system_option": false,
+        "waybill_tracking_id": null,
+        "estimated_delivery_time": null,
+        "has_waybill_and_packing_list": false,
+        "had_errors_while_fetching_waybill": false
+      },
+      "address": {
+        "lat": null,
+        "lng": null,
+        "city": {
+          "id": 1495,
+          "name": "NA"
+        },
+        "meta": null,
+        "street": "NA",
+        "country": {
+          "id": 184,
+          "name": "NA"
+        },
+        "district": "NA",
+        "short_address": null,
+        "formatted_address": "NA"
+      }
+    },
+    "store_id": 211351,
+    "histories": [
+      {
+        "comment": "تم تغيير حالة الطلب إلى \"تم التوصيل\"",
+        "created_at": "2024-04-11 01:03:51",
+        "changed_by_id": 231688,
+        "changed_by_type": "تاجر",
+        "order_status_id": 5,
+        "order_status_name": "تم التوصيل",
+        "changed_by_details": {
+          "by": "مشروع سقيا",
+          "action": "تم تغيير حالة الطلب إلى \"تم التوصيل\"",
+          "comment": "تغيير جماعي لحالة الطلب ."
+        },
+        "humanized_created_at": "منذ 3 ثواني"
+      },
+      {
+        "comment": "تم تغيير حالة الطلب إلى \"جاري التجهيز\"",
+        "created_at": "2024-04-08 21:26:58",
+        "changed_by_id": 447711,
+        "changed_by_type": "تاجر",
+        "order_status_id": 2,
+        "order_status_name": "جاري التجهيز",
+        "changed_by_details": {
+          "by": "عبد الله حمامي",
+          "action": "تم تغيير حالة الطلب إلى \"جاري التجهيز\"",
+          "comment": "تغيير جماعي لحالة الطلب ."
+        },
+        "humanized_created_at": "منذ يومين"
+      },
+      {
+        "comment": "تم ارسال فاتورة الطلب",
+        "created_at": "2024-04-08 18:05:35",
+        "changed_by_id": 8114623,
+        "changed_by_type": "عميل",
+        "order_status_id": 1,
+        "order_status_name": "جديد",
+        "changed_by_details": {
+          "by": "Alanoud aqab alashammari",
+          "action": "تم ارسال فاتورة الطلب",
+          "comment": ""
+        },
+        "humanized_created_at": "منذ يومين"
+      },
+      {
+        "comment": "تم إنشاء الطلب .",
+        "created_at": "2024-04-08 18:05:33",
+        "changed_by_id": 8114623,
+        "changed_by_type": "عميل",
+        "order_status_id": 1,
+        "order_status_name": "جديد",
+        "changed_by_details": {
+          "by": "Alanoud aqab alashammari",
+          "action": "تم إنشاء الطلب .",
+          "comment": ""
+        },
+        "humanized_created_at": "منذ يومين"
+      }
+    ],
+    "order_url": "https://sqyea-alhram.com/o/uCExgVrIDx/inv",
+    "store_url": "https://sqyea-alhram.com/",
+    "created_at": "2024-04-08 18:05:33",
+    "issue_date": "08-04-2024 | 09:05 م",
+    "store_name": "مشروع سقيا",
+    "updated_at": "2024-04-11 01:03:51",
+    "order_total": "225.00000000000000",
+    "source_code": "mobile_app",
+    "gift_message": null,
+    "order_status": {
+      "code": "delivered",
+      "name": "تم التوصيل"
+    },
+    "payment_link": null,
+    "cod_confirmed": false,
+    "currency_code": "SAR",
+    "customer_note": "",
+    "is_gift_order": 0,
+    "reseller_meta": null,
+    "return_policy": null,
+    "is_reactivated": false,
+    "packages_count": 1,
+    "payment_status": "paid",
+    "products_count": 1,
+    "gift_card_details": null,
+    "inventory_address": null,
+    "is_guest_customer": 0,
+    "requires_shipping": false,
+    "order_total_string": "225.00 SAR",
+    "transaction_amount": 225,
+    "weight_cost_details": [],
+    "shipping_method_code": null,
+    "transaction_reference": "4843ff56-7dc0-406f-b067-35ba9061e3bd",
+    "zidship_ticket_number": null,
+    "has_different_consignee": null,
+    "is_quick_checkout_order": false,
+    "is_reseller_transaction": false,
+    "products_sum_total_string": "250.00 SAR",
+    "transaction_amount_string": "225.00 SAR",
+    "reverse_order_label_request": null,
+    "has_different_transaction_currency": false
+  }

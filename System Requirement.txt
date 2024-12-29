@@ -1,0 +1,11 @@
+1. The system should support inserting various JSON schemas for different store types (e.g., 'Salla', 'Zid', 'Shopify', etc.) and store them as models in the database. Refer to the `.json/` folder for examples of Salla and Zid schemas.  
+2. The system must provide functionality to update existing orders as required.  
+3. The system should facilitate the easy integration of new JSON schemas for parsing orders from additional store types.  
+4. The system must effectively handle race conditions, so we dont end up with 2 customers of the same store type and custom id.
+5. The `stores_webhooks` view should ensure response times do not exceed 5 seconds.  
+6. The system must successfully pass all tests in the `test.py` file without errors.  
+7. All orders should be accurately saved in the database.  
+
+**Commands to run:**  
+- `python manage.py makemigrations`  
+- `python manage.py migrate`  

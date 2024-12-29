@@ -1,0 +1,198 @@
+{
+    "event": "order.created",
+    "merchant": 879450525,
+    "created_at": "Mon Apr 22 2024 11:57:16 GMT+0300",
+    "data": {
+      "id": 63215579,
+      "cart_reference_id": null,
+      "reference_id": 115700032,
+      "urls": {
+        "customer": "https://salla.sa/dev-8bdttknhfwt21yxn/order/7Gey9lbm4DoV143K4jkM5xK8ZrYREJjN",
+        "admin": "https://s.salla.sa/orders/order/7Gey9lbm4DoV143K4jkM5xK8ZrYREJjN"
+      },
+      "date": {
+        "date": "2024-04-22 11:57:15.000000",
+        "timezone_type": 3,
+        "timezone": "Asia/Riyadh"
+      },
+      "updated_at": {
+        "date": "2024-04-22 11:57:15.687605",
+        "timezone_type": 3,
+        "timezone": "Asia/Riyadh"
+      },
+      "source": "dashboard",
+      "source_device": "desktop",
+      "source_details": {
+        "type": "dashboard",
+        "value": null,
+        "device": "desktop",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+        "ip": null
+      },
+      "status": {
+        "id": 566146469,
+        "name": "بإنتظار المراجعة",
+        "slug": "under_review",
+        "customized": {
+          "id": 1718648626,
+          "name": "بإنتظار المراجعة"
+        }
+      },
+      "is_price_quote": false,
+      "payment_method": "mada",
+      "currency": "SAR",
+      "amounts": {
+        "sub_total": {
+          "amount": 5,
+          "currency": "SAR"
+        },
+        "shipping_cost": {
+          "amount": 0,
+          "currency": "SAR"
+        },
+        "cash_on_delivery": {
+          "amount": 0,
+          "currency": "SAR"
+        },
+        "tax": {
+          "percent": "0.00",
+          "amount": {
+            "amount": 0,
+            "currency": "SAR"
+          }
+        },
+        "discounts": [],
+        "total": {
+          "amount": 5,
+          "currency": "SAR"
+        }
+      },
+      "can_cancel": false,
+      "show_weight": false,
+      "can_reorder": false,
+      "is_pending_payment": false,
+      "pending_payment_ends_at": 172799,
+      "total_weight": null,
+      "rating_link": null,
+      "shipping": null,
+      "shipments": null,
+      "shipment_branch": [],
+      "customer": {
+        "id": 1245997205,
+        "first_name": "Ammar",
+        "last_name": "Alzahrani",
+        "mobile": 562601855,
+        "mobile_code": "+966",
+        "email": "ammarjmhor10@gmail.com",
+        "urls": {
+          "customer": "https://salla.sa/dev-8bdttknhfwt21yxn/profile",
+          "admin": "https://s.salla.sa/customers/BR274XKlNyP9waGk88naGzELkVx6bQrj"
+        },
+        "avatar": "https://cdn.assets.salla.network/prod/admin/cp/assets/images/avatar_male.png",
+        "gender": "male",
+        "birthday": null,
+        "city": "جدة",
+        "country": "السعودية",
+        "country_code": "SA",
+        "currency": "AED",
+        "location": "",
+        "updated_at": {
+          "date": "2024-04-19 21:33:23.000000",
+          "timezone_type": 3,
+          "timezone": "Asia/Riyadh"
+        },
+        "groups": []
+      },
+      "items": [
+        {
+          "id": 507504912,
+          "name": "telegram",
+          "sku": "telegeram",
+          "quantity": 1,
+          "currency": "SAR",
+          "weight": 0,
+          "weight_label": null,
+          "amounts": {
+            "price_without_tax": {
+              "amount": 5,
+              "currency": "SAR"
+            },
+            "total_discount": {
+              "amount": 0,
+              "currency": "SAR"
+            },
+            "tax": {
+              "percent": "0.00",
+              "amount": {
+                "amount": 0,
+                "currency": "SAR"
+              }
+            },
+            "total": {
+              "amount": 5,
+              "currency": "SAR"
+            }
+          },
+          "notes": "",
+          "product": {
+            "id": 1488099704,
+            "type": "digital",
+            "promotion": {
+              "title": null,
+              "sub_title": null
+            },
+            "quantity": null,
+            "status": "hidden",
+            "is_available": false,
+            "sku": "",
+            "name": "telegram",
+            "price": {
+              "amount": 5,
+              "currency": "SAR"
+            },
+            "sale_price": {
+              "amount": 0,
+              "currency": "SAR"
+            },
+            "currency": "SAR",
+            "url": "https://salla.sa/dev-8bdttknhfwt21yxn/telegram/p1488099704",
+            "thumbnail": "",
+            "has_special_price": false,
+            "regular_price": {
+              "amount": 5,
+              "currency": "SAR"
+            },
+            "calories": null,
+            "mpn": "",
+            "gtin": "",
+            "description": "",
+            "favorite": null,
+            "features": {
+              "availability_notify": null,
+              "show_rating": true
+            }
+          },
+          "options": [],
+          "images": [],
+          "codes": [],
+          "files": [],
+          "reservations": null,
+          "product_reservations": []
+        }
+      ],
+      "bank": null,
+      "tags": [],
+      "store": {
+        "id": 1178631873,
+        "store_id": 1178631873,
+        "user_id": 1963520092,
+        "user_email": "8bdttknhfwt21yxn@email.partners",
+        "username": "dev-8bdttknhfwt21yxn",
+        "name": {
+          "ar": "متجر تجريبي",
+          "en": null
+        },
+        "avatar": "https://salla-dev.s3.eu-central-1.amazonaws.com/logo/logo-fashion.jpg"
+      }
+    }
+  }
